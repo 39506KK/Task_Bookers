@@ -2,9 +2,11 @@
 
 <% @books.each do |book| %>
 
-  <p>Title</p>
-  <span>
-    <%= @books = Book.find(params[:id]) %>
+  <table>
+    Title
+    </table>
+  <thead>
+    <%= link_to book.title, book_path(book.id) %>
   </span>
   
   <P>Body</P>
